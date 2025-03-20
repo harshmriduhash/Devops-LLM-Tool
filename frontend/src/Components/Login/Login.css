@@ -1,46 +1,46 @@
 /* General container styles */
 .loginContainer {
-    display: flex; /* Use flexbox for side-by-side layout */
-    width: 100%; /* Stretch across the page */
-    height: 100vh; /* Make the container fill the viewport height */
-    position: relative;
-    background: rgb(10, 10, 10); /* Page-specific background color */
-    color: white; /* Page-specific text color */
-    font-family: Arial, sans-serif; /* Optional: Sets a default font */
+  display: flex; /* Use flexbox for side-by-side layout */
+  width: 100%; /* Stretch across the page */
+  height: 100vh; /* Make the container fill the viewport height */
+  position: relative;
+  background: rgb(10, 10, 10); /* Page-specific background color */
+  color: white; /* Page-specific text color */
+  font-family: Arial, sans-serif; /* Optional: Sets a default font */
 }
 
 /* Left section styles */
 .leftSection {
-    flex: 1; /* Take up half the width */
-    display: flex;
-    flex-direction: column; /* Stack heading and button vertically */
-    justify-content: center; /* Center content vertically */
-    align-items: center; /* Center content horizontally */
-    text-align: center; /* Align text */
-    padding: 20px;
+  flex: 1; /* Take up half the width */
+  display: flex;
+  flex-direction: column; /* Stack heading and button vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  text-align: center; /* Align text */
+  padding: 20px;
 }
 
 /* Middle line styles */
 .middleLine {
-    width: 1px;
-    background-color: gray;
-    height: 100%;
+  width: 1px;
+  background-color: gray;
+  height: 100%;
 }
 
 /* Right section styles */
 .rightSection {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
 /* GitHub logo styles */
 .githubLogo {
-    width: 24px;
-    height: 24px;
-    margin-right: 8px;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
 }
 
 /* Login.css */
