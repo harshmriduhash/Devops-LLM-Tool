@@ -1,7 +1,7 @@
 // backend/passport.js
-const passport = require('passport');
-const GitHubStrategy = require('passport-github2').Strategy;
-const User = require('./models/User');
+const passport = require("passport");
+const GitHubStrategy = require("passport-github2").Strategy;
+const User = require("./models/User");
 
 passport.serializeUser((user, done) => {
   done(null, user.id);
@@ -10,7 +10,7 @@ passport.serializeUser((user, done) => {
 passport.deserializeUser(async (id, done) => {
   try {
     const user = await User.findById(id);
-    console.log('Deserialized User:', user);
+    console.log("Deserialized User:", user);
     done(null, user);
   } catch (err) {
     done(err, null);
@@ -44,7 +44,7 @@ passport.use(
         }
         return done(null, user);
       } catch (err) {
-        console.error('Error in GitHub Strategy:', err);
+        console.error("Error in GitHub Strategy:", err);
         done(err, null);
       }
     }
