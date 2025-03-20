@@ -1,0 +1,91 @@
+/* SideNavbar.css */
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  background: rgb(10, 10, 10);
+  color: #fff;
+  padding: 10px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.repo-name-box {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 5px;
+  border: none;
+  border-radius: 4px;
+  background-color: transparent;
+  margin-top: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.repo-name-box:hover {
+  background-color: darkcyan;
+}
+
+.file-tree {
+  list-style: none;
+  padding-left: 10px;
+}
+
+.file-tree li {
+  margin: 5px 0;
+}
+
+/* Container for the sidebar */
+.side-navbar-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* New toggle button styling */
+.toggle-handle {
+  position: absolute;
+  top: 10px;
+  right: -40px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background-color: rgb(10, 10, 10);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 16px;
+  user-select: none;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Unique styling for profile button */
+.profile-btn {
+  background-color: #000000;  /* unique button background color */
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  width: 100%;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  box-sizing: border-box;       /* ensure padding is included in the width */
+  max-width: 100%;              /* prevent button from overflowing */
+  overflow: hidden;             /* hide overflow text */
+  white-space: nowrap;          /* keep text on a single line */
+  text-overflow: ellipsis;      /* add ellipsis for overflowing text */
+}
+
+.profile-btn:hover {
+  background-color: darkcyan;
+  color: white;
+}

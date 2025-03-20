@@ -1,0 +1,33 @@
+/* repositories.css */
+
+.repositories-container {
+    margin: 20px;
+    background: rgb(10, 10, 10);
+    color: #fff;
+}
+  
+.repositories-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px;
+}
+  
+.repositories-list {
+    list-style: none;
+    padding: 0;
+}
+  
+.repositories-list li {
+    margin-bottom: 10px;
+    margin-left: 600px;
+}
+  
+.repositories-link {
+    text-decoration: none;
+    color: rgb(26, 149, 198);
+    font-weight: bold;
+}
+  
+.repositories-link:hover {
+    text-decoration: underline;
+}

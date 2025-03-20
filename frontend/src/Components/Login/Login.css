@@ -1,0 +1,98 @@
+/* General container styles */
+.loginContainer {
+    display: flex; /* Use flexbox for side-by-side layout */
+    width: 100%; /* Stretch across the page */
+    height: 100vh; /* Make the container fill the viewport height */
+    position: relative;
+    background: rgb(10, 10, 10); /* Page-specific background color */
+    color: white; /* Page-specific text color */
+    font-family: Arial, sans-serif; /* Optional: Sets a default font */
+}
+
+/* Left section styles */
+.leftSection {
+    flex: 1; /* Take up half the width */
+    display: flex;
+    flex-direction: column; /* Stack heading and button vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Align text */
+    padding: 20px;
+}
+
+/* Middle line styles */
+.middleLine {
+    width: 1px;
+    background-color: gray;
+    height: 100%;
+}
+
+/* Right section styles */
+.rightSection {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* GitHub logo styles */
+.githubLogo {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+/* Login.css */
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+}
+
+.login-box {
+  text-align: center;
+  padding: 40px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.login-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.login-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #333;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.github-logo {
+  width: 20px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.login-button:hover {
+  background-color: #555;
+}
