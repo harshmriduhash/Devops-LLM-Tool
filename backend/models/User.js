@@ -1,5 +1,5 @@
 // backend/models/User.js
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
 const UserSchema = new mongoose.Schema({
   githubId: {
@@ -16,4 +16,4 @@ const UserSchema = new mongoose.Schema({
   githubToken: String,
 });
 
-module.exports = mongoose.model('User', UserSchema);
+module.exports = mongoose.model("User", UserSchema);
