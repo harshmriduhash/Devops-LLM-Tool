@@ -1,7 +1,7 @@
-import React, { useState, useContext } from 'react';
-import axios from 'axios';
-import { useParams, Link } from 'react-router-dom';
-import { UserContext } from '../../Utils/UserContext';
+import React, { useState, useContext } from "react";
+import axios from "axios";
+import { useParams, Link } from "react-router-dom";
+import { UserContext } from "../../Utils/UserContext";
 
 function FileTree({ item }) {
   const { user } = useContext(UserContext);
@@ -10,7 +10,7 @@ function FileTree({ item }) {
   const { username, repoName } = useParams();
 
   const toggleExpand = async () => {
-    if (!expanded && item.type === 'dir') {
+    if (!expanded && item.type === "dir") {
       try {
         const res = await axios.get(item.url, {
           headers: {
@@ -19,20 +19,20 @@ function FileTree({ item }) {
         });
         setChildren(res.data);
       } catch (err) {
-        console.error('Error fetching directory contents:', err);
+        console.error("Error fetching directory contents:", err);
       }
     }
     setExpanded(!expanded);
   };
 
-  if (item.type === 'dir') {
+  if (item.type === "dir") {
     return (
       <li>
-        <span onClick={toggleExpand} style={{ cursor: 'pointer' }}>
+        <span onClick={toggleExpand} style={{ cursor: "pointer" }}>
           {item.name}
         </span>
         {expanded && children.length > 0 && (
-          <ul style={{ listStyleType: 'none' }}>
+          <ul style={{ listStyleType: "none" }}>
             {children.map((child) => (
               <FileTree key={child.sha} item={child} />
             ))}
@@ -48,7 +48,10 @@ function FileTree({ item }) {
 
   return (
     <li>
-      <Link to={fileViewerPath} style={{ textDecoration: 'none', color: 'inherit' }}>
+      <Link
+        to={fileViewerPath}
+        style={{ textDecoration: "none", color: "inherit" }}
+      >
         {item.name}
       </Link>
     </li>
