@@ -1,18 +1,18 @@
-import React, { useState } from 'react';
-import './ChatInput.css'; // import external CSS
+import React, { useState } from "react";
+import "./ChatInput.css"; // import external CSS
 
 function ChatInput({ sendMessage }) {
-  const [input, setInput] = useState('');
+  const [input, setInput] = useState("");
 
   const handleSend = () => {
     if (input.trim()) {
       sendMessage(input);
-      setInput('');
+      setInput("");
     }
   };
 
   const handleKeyPress = (e) => {
-    if (e.key === 'Enter' && !e.shiftKey) {
+    if (e.key === "Enter" && !e.shiftKey) {
       e.preventDefault();
       handleSend();
     }
